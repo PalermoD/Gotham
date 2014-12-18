@@ -17,5 +17,7 @@ Rails.application.routes.draw do
 
   delete 'logout' => 'sessions#destroy'
 
+  resources :microposts,          only: [:create, :destroy]
+
   resources :users
 end
