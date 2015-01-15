@@ -2,18 +2,23 @@
 
 <div class="row">
   <aside class="col-md-4">
-    <h1>Profile Page</h1>
+    
     <section class="ava">
-      
+      <h2>Profile</h2>
+      <center>
       <h1>
         
         <%= gravatar_for @user %>
         <%= @user.name %>
+
         
       </h1>
+      </center>
     </section>
     <section class="stats">
+      <center>
       <%= render 'shared/stats' %>
+    </center>
     </section>
   </aside>
   <div class="col-md-8">
